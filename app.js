@@ -159,11 +159,10 @@ app.get("/week/boxoffice", async (req, res) => {
         title: movie.title, // 제목
         openDt: movie.openDt, //영화 개봉일
         audiCnt: movie.audiCnt, // 영화 해당일의 관객수
-        audiAcc: movie.audiAcc, // 영화 누적 과객수
+        audiAcc: movie.audiAcc, // 영화 누적 관객수
         plot: movie.movie.plot, //영화 줄거리
         posters: movie.movie.posters, // 영화 포스터
-        // vodClass: movie.movie.vodClass, // 영화 예고편
-        vodUrl: movie.movie.vodUrl, // 영화 예고편
+        vodUrl: movie.movie.vodUrl,
         rank: movie.rank, // 영화 순위
       }));
 
